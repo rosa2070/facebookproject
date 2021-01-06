@@ -398,12 +398,12 @@
 }
 
 
-.icon{
-    margin-right: 10px;
-}
-
 .icon:hover {
     opacity: 1;
+}
+
+.icon{
+    margin-right: 10px;
 }
 
 .icon--send {
@@ -587,28 +587,12 @@
     height: 30px;
 }
 
-
-.profile_img{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #fff;
-    margin-right: 10px;
-}
-
-.profile_img img{
-    width: 100%;
-    height: 100%;
-}
 .icon--arrow-top {
     display: inline-block;
     background: url('../imgs/bg06.png') no-repeat -1px -2466px;
     width: 30px;
     height: 16px;
 }
-
 
 #header{
     width:100vw;
@@ -629,6 +613,28 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
+.profile_img{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.profile_img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
 
 #header .inner .left{
     display:flex;
@@ -651,7 +657,7 @@
     background: transparent;
 }
 
-#search{
+#search {
     border: none;
     border-radius: 3px;
     width: 100%;
@@ -659,7 +665,7 @@
 }
 
 
-#header .inner .right{
+#header .inner .right {
     display: flex;
     font-size: 12px;
     color: #fff;
@@ -667,7 +673,7 @@
     align-items: center;
 }
 
-#header .inner .right .my_name{
+#header .inner .right .my_name {
     display: flex;
     align-items: center;
 
@@ -679,7 +685,7 @@
     position: relative;
 }
 
-#header .inner .right > div:after{
+#header .inner .right > div:after {
     content: '';
     width: 1px;
     height: 18px;
@@ -696,4 +702,27 @@
 
 #header .right .icon{
     margin-right: 0;
+}
+
+
+#header .icon--bell-black{
+    position: relative;
+}
+
+#header .bell:before{
+    content: '1';
+    color: #fff;
+    background-color: var(--notification-badge);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    z-index: 100;
+
 }
